@@ -7,7 +7,10 @@ const pool = new Pool({
 	database: process.env.DB || '',
 	max: 20,
 	connectionTimeoutMillis: 0,
-	idleTimeoutMillis: 0
+	idleTimeoutMillis: 0,
+	ssl: {
+		rejectUnauthorized: false
+	}
 });
 
 module.exports.insertData = (data, callback) => {
