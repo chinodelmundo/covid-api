@@ -8,9 +8,9 @@ const pool = new Pool({
 	max: 20,
 	connectionTimeoutMillis: 0,
 	idleTimeoutMillis: 0,
-	ssl: {
-		rejectUnauthorized: false
-	}
+	// ssl: {
+		// rejectUnauthorized: false
+	// }
 });
 
 module.exports.insertData = (data, callback) => {
