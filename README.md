@@ -25,19 +25,19 @@ https://covid-observations.herokuapp.com/top?observation_date=2020-02-24&max_res
 7. Use Postman to test the API.
 
 ## API
-```http
+```
   GET /top/confirmed?observation_date=yyyy-mm-dd&max_results=n
 ```
 - This will return a list of 'n' number of countries with top confirmed cases for that day.
 
 
-```http
+```
   DELETE /
 ```
 - This will delete the table data for covid_observations
 
 
-```http
+```
   POST /
 ```
 - This will insert the data from 'covid_19_data.csv' found in the files folder.
